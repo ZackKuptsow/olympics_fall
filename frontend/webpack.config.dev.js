@@ -13,12 +13,13 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	devServer: {
-		// stats: 'minimal',
-		client: {
-			overlay: true
-		},
+		stats: 'minimal',
+		// client: {
+		// 	overlay: true
+		// },
+		overlay: true,
 		historyApiFallback: true,
-		// disableHostCheck: true,
+		disableHostCheck: true,
 		headers: { 'Access-Control-Allow-Origin': '*' },
 		https: false
 	},

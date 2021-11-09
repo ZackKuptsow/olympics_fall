@@ -274,6 +274,7 @@ fixtures/dom/public/react.js
 test/the-files-to-test.generated.js
 *.log*
 chrome-user-data
+static/
 *.sublime-project
 *.sublime-workspace
 .idea
