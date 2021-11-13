@@ -1,6 +1,8 @@
 import axios from 'axios';
+
 const baseURL = process.env.API_URL;
 const accessToken = localStorage.getItem('access_token');
+
 const axiosAPI = axios.create({
 	baseURL: baseURL,
 	timeout: 5000,

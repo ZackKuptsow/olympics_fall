@@ -1,8 +1,10 @@
 import { LOGIN_USER_SUCCESS, LOGOUT_USER } from './types';
 import { obtainToken, logout } from '../../components/api/authenticationApi';
+
 export function loginUserSuccess(token) {
 	return { type: LOGIN_USER_SUCCESS, token };
 }
+
 export function loginUser(username, password) {
 	return async function (dispatch) {
 		try {
@@ -13,9 +15,11 @@ export function loginUser(username, password) {
 		}
 	};
 }
+
 export function logoutUserSuccess() {
 	return { type: LOGOUT_USER };
 }
+
 export function logoutUser() {
 	return async function (dispatch) {
 		await logout();

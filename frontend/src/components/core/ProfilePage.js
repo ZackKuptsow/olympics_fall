@@ -1,5 +1,6 @@
 import React from 'react';
 import axiosAPI from '../api/axiosApi';
+
 const ProfilePage = () => {
 	const handleClick = async () => {
 		const response = await axiosAPI.get('protected/');
