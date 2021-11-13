@@ -35,6 +35,7 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=list())
 # Application definition
 
 INSTALLED_APPS = [
+    "backend.apps.api",
     "backend.apps.authentication",
     "backend.apps.core",
     "rest_framework",
